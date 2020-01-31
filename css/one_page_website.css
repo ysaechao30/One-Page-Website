@@ -1,0 +1,19 @@
+/*================================================
+ Generic Styles
+================================================*/
+
+html {
+    font-family: Arial Narrow;
+    font-size: 80%;
+}
+
+.reservation {
+    width: 50%;
+    background-color: bisque;
+    border-top: 1px solid #090B0D;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090B0D;
+    margin: 10px 1em;
+    border-radius: 7px;
+}
