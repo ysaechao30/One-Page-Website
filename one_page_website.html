@@ -1,89 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Dog Adoption Agency</title>
-		<link rel="stylesheet" href="./css/one_page_website.css">
-	</head>
-	<body>
-		<!--NAV-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Dog Adoption Agency</title>
+	<link rel="stylesheet" href="./css/one_page_website.css">
+</head>
+
+<body>
+	<!--NAV-->
+	<div>
+		<div>
+			<ul>
+				<a href="#home" id="link">
+					<li>HOME</li>
+				</a>
+				<a href="#dogs">
+					<li>DOGS</li>
+				</a>
+				<a href="#contact">
+					<li>INQUIRIES
+				</a>
+			</ul>
+		</div>
+	</div>
+	<!--END NAV -->
+
+
+	<!--HOME -->
+	<div id="home">
 		<div>
 			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#dogs"><li>DOGS</li></a>
-					<a href="#contact"><li>INQUIRIES</a>
-				</ul>
+				<h1>D.A.A.</h1>
 			</div>
 		</div>
-		<!--END NAV -->
-	
-	
-	<!--HOME -->
-		<div id="home">
-			<div>
-				<div>
-					<h1>D.A.A.</h1>
-				</div>
-			</div>
-		</div>
-		<!-- END HOME -->
-		
-		<!-- GALLERY -->
-		<section>
-			<div id="dogs">
-				<h1>DOGS</h1>
-				</div>
-				
-				<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="./images/thumb_1.png" width="400px" height="400px" alt="Cavalier">
-						<div>
-							<p>Adopt Today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 1 -->
-				
-				<!-- PHOTO CONTAINER 2 -->
-				<div>
-					<div>
-					<img src="./images/thumb_2.png" width="400px" height="400px" alt="Golden Retriever">
-						<div>
-							<p>Adopt Today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 2 -->
-				
-				<!-- PHOTO CONTAINER 3 -->
-				<div>
-					<div>
-					<img src="./images/thumb_3.png" width="400px" height="400px" alt="Corgi">
-						<div>
-							<p>Adopt Today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 3 -->
-				
-				<!-- PHOTO CONTAINER 4 -->
-				<div>
-					<div>
-					<img src="./images/thumb_4.png" width="400px" height="400px" alt="Dachshund">
-						<div>
-							<p>Adopt Today!</p>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 4 -->
-				
-			</div>
-		</div>
-	</section>
+	</div>
+	<!-- END HOME -->
+
+	<!-- GALLERY -->
+	<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+	  <img src="./images/thumb_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" height="65%" width="80%">
+	</div>
+	<div class="column">
+	  <img src="./images/thumb_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow" height="60%" width="80%">
+	</div>
+	<div class="column">
+	  <img src="./images/thumb_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" height="75%" width="90%" >
+	</div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 3</div>
+		<img src="./images/thumb_1.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 3</div>
+		<img src="./images/thumb_2.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 3</div>
+		<img src="./images/thumb_3.png" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./images/thumb_1.png" onclick="currentSlide(1)" alt="Maltese">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/thumb_2.png" onclick="currentSlide(2)" alt="Golden Retriever">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/thumb_3.png" onclick="currentSlide(3)" alt="Corgi">
+	  </div>
+  </div>
+  </div>
 	<!-- END GALLERY -->
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/a0QvBe4M1Ao" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="560" height="315" alignment="left" src="https://www.youtube.com/embed/a0QvBe4M1Ao" frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<!-- INQUIRE -->
 	<section>
 		<div id="contact">
@@ -94,7 +106,7 @@
 						<br> <em>Give a loving dog a loving home.</em>
 					</h2>
 					</p>
-					<div> 
+					<div>
 						<form action="" method="post">
 							<input class="rvsp" type="text" value="First Name">
 							<input class="rvsp" type="text" value="Last Name">
@@ -102,26 +114,27 @@
 							<input class="rvsp" type="text" value="Phone Number">
 							<div class="form-spacer">
 								<label class="terms">Terms and Conditions</label>
-								</div>
-								<div>
-									<input type="submit" value="Submit">
-									</div>
-								</form>
 							</div>
-						</div>
+							<div>
+								<input type="submit" value="Submit">
+							</div>
+						</form>
 					</div>
 				</div>
-			</section>
-			<!-- END INQUIRE -->
-			
-			<!-- FOOTER -->
-			<div>
-				w.daadogs.paw &nbsp;|&nbsp; &copy;2020
 			</div>
-			<!-- END FOOTER -->
-						
-		
-		
-	</body>
+		</div>
+	</section>
+	<!-- END INQUIRE -->
+
+	<!-- FOOTER -->
+	<div>
+		w.daadogs.paw &nbsp;|&nbsp; &copy;2020
+	</div>
+	<!-- END FOOTER -->
+
+<script src = "JS/JS.js"></script>
+
+</body>
+
 </html>
-	</body>
+</body>
